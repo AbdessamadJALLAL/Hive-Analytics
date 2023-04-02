@@ -1,0 +1,10 @@
+sqoop import --connect jdbc:mysql://ra_mysql:3306/testdb --username root \
+--target-dir /input/customerdemo/ \
+--query 'SELECT CustomerID, AccountNumber, CustomerType, Demographics, TerritoryID, ModifiedDate FROM v_customer_demo WHERE $CONDITIONS' --split-by CustomerID --password example
+
+sqoop import --connect jdbc:mysql://ra_mysql:3306/testdb --username root --password example --query 'SELECT CreditCardID, CardType, CardNumber, ExpMonth, ExpYear, ModifiedDate FROM ccard WHERE $CONDITIONS' --split-by CreditCardID --target-dir /input/creditcard/ 
+
+# Commands to check the files created
+
+hadoop fs -ls /input/customerdemo/
+hadoop fs -ls /input/creditcard/ 
