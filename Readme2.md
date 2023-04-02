@@ -1,16 +1,16 @@
 # Hive Analytics using Sqoop, Spark in AWS
 
-# RDBMS - Read and Write Many times mechanism, suitable for OLTP operations
-# SQOOP - used to load data from RDBMS into HDFS. Does not support aggregation operations, supports MAP only.
-# HDFS - Storage layer. HDFS offers High Availability, fault tolerance,Data localization   
-# Hive - Data warehousing tool , used for OLAP processing. Write once, Read Many time mechanism. 
-# Spark - - IN-MEMORY processing is used when the data is stored in an in-memory data store or an in-memory data structure.
+## RDBMS - Read and Write Many times mechanism, suitable for OLTP operations
+## SQOOP - used to load data from RDBMS into HDFS. Does not support aggregation operations, supports MAP only.
+## HDFS - Storage layer. HDFS offers High Availability, fault tolerance,Data localization   
+## Hive - Data warehousing tool , used for OLAP processing. Write once, Read Many time mechanism. 
+## Spark - - IN-MEMORY processing is used when the data is stored in an in-memory data store or an in-memory data structure.
 
 
 # Dataset used for analysis - AdventureWorks
-# Refer data schema's in file : 00_AdventureWorks2008_db_diagram.pdf
+## Refer data schema's in file : 00_AdventureWorks2008_db_diagram.pdf
 
-# In this sessions, we will try creating customers,creditcard, Individual tables with a subset of data.
+# We will try creating customers,creditcard, Individual tables with a subset of data.
 ## Complete dataset can be located in folder name : AdventureWorks - Complete dataset
 
 
