@@ -48,7 +48,6 @@ from data and store it as parquet files.
 ● Perform Hive analytics on Customer demographics data.
 
 ## Project Takeaways
-● Understanding various services provided by AWS
 
 ● Creating an AWS EC2 instance and launching it
 
